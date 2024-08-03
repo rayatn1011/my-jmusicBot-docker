@@ -21,7 +21,7 @@ RUN chmod +x /app/generate_config.sh
 RUN /app/generate_config.sh
 
 # Stage 3: execution JMusicBot
-FROM openjdk:11-jre-alpine
+FROM eclipse-temurin:11-jre-focal
 COPY --from=downloader /app/JMusicBot.jar /app/JMusicBot.jar
 COPY --from=config-generator /app/config.txt /app/config.txt
 WORKDIR /app 
