@@ -15,10 +15,10 @@ FROM alpine as config-generator
 ENV DC_TOKEN=$DC_TOKEN
 ENV DC_OWNER_ID=$DC_OWNER_ID
 COPY config.template.txt /app/config.template.txt
-COPY generate_config.sh /app/generate_config.sh
+COPY generate-config.sh /app/generate-config.sh
 WORKDIR /app
-RUN chmod +x /app/generate_config.sh
-RUN /app/generate_config.sh
+RUN chmod +x /app/generate-config.sh
+RUN /app/generate-config.sh
 
 # Stage 3: execution JMusicBot
 FROM eclipse-temurin:11-jre-focal
