@@ -8,18 +8,13 @@
 
 ```
 .
-├── config.template.txt
-├── Dockerfile
-└── generate_config.sh
+├── config.txt
+└── Dockerfile
 ```
 
-### config.template.txt
+### config.txt
 
 這個文件是 JMusicBot 的設定模板，其中包含需要替換的佔位符 YOUR_BOT_TOKEN 和 YOUR_OWNER_ID。
-
-### generate_config.sh
-
-這個腳本將 `config.template.txt` 文件中的佔位符替換為環境變數中的值，並產生最終的 `config.txt` 文件。
 
 ## 構建和執行
 
@@ -65,18 +60,13 @@ This project packages JMusicBot and its configuration file (config.txt) into a D
 
 ```
 .
-├── config.template.txt
-├── Dockerfile
-└── generate_config.sh
+├── config.txt
+└── Dockerfile
 ```
 
-### config.template.txt
+### config.txt
 
 This file is the configuration template for JMusicBot, containing placeholders for YOUR_BOT_TOKEN and YOUR_OWNER_ID that need to be replaced.
-
-### generate_config.sh
-
-This script replaces the placeholders in the `config.template.txt` file with values from environment variables and generates the final `config.txt` file.
 
 ## Build and Run
 
